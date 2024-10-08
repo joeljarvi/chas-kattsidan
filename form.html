@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1b040fe3b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bli medlem</title>
+  </head>
+  <body>
+    <header>
+      <h1>Kattsidan</h1>
+      <nav>
+        <span class="navbar open">
+          <a href="index.html">Start</a>
+          <a>Katter</a>
+          <a>Om oss</a>
+          <a>Kontakt</a>
+        </span>
+        <span class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="section section1">
+          <h2>Vad kul att just du vill bli medlem!</h2>
+
+          <div class="formContainer">
+            <form action="https://httpbin.org/anything" method="post">
+              <div class="first-name form-item1">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="first-name" type="text" required />
+              </div>
+              <div class="last-name form-item2">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="last-name" type="text" required />
+              </div>
+
+              <div class="username form-item1">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="username" required />
+              </div>
+
+              <div class="password form-item2">
+                <label for="pass">Password</label>
+                <input id="pass" name="password" type="password" required />
+              </div>
+
+              <div class="email form-item1">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="cat-selection form-item2">
+                <label for="cat-select">Choose a cat</label>
+                <select name="cat" id="cat-select" required>
+                  <option value="">Please choose a cat</option>
+                  <option value="dog">big cat</option>
+                  <option value="cat">medium cat</option>
+                  <option value="hamster">normal cat</option>
+                  <option value="parrot">small cat</option>
+                </select>
+              </div>
+
+              <div class="agreement form-item1">
+                <p>
+                  Are you agreeing to terms and do you wish to become a member
+                  of this cat society?
+                </p>
+                <input
+                  type="checkbox"
+                  value="agree"
+                  name="check"
+                  id="check"
+                /><label for="check">Yes, I agree!</label>
+              </div>
+
+              <div class="send form-item1">
+                <button type="submit">Skicka</button>
+              </div>
+            </form>
+          </div>
+
+          <img src="images/1.webp" alt="Katt 1" />
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2023 Kattsidan</footer>
+    <script src="navbar.js"></script>
+  </body>
+</html>
